@@ -13,10 +13,8 @@
 
 ## Before retiring WordPress
 
-The new site still loads **images and PDFs from `sumhlc.org/wp-content/uploads/`** (logo, staff photos, member logos, news images, handouts, membership applications). Once WordPress is shut down those links break, so:
-
-- [ ] Copy those files into `public/` (e.g. `public/documents/`, `public/images/`) and update the URLs in `content/` (Pages CMS uploads land in `public/uploads/`).
-- [ ] Remove the `sumhlc.org` entry from `images.remotePatterns` in `next.config.ts`.
+- [x] All 146 images, PDFs and Word files the site used from WordPress are copied to `public/wp-content/uploads/` at their original paths, so old links to them keep working after the domain moves (`scripts/migrate-wordpress-assets.mjs`). New uploads from Pages CMS go to `public/uploads/`.
+- [ ] Download a full backup from the WordPress host before cancelling it.
 - [ ] Replace the 150 px PNG logo with a vector (SVG) version if one exists.
 - [ ] Broken on the old site and **left out** of the new one: the Anchor Recovery support-group page and the 2019 RI Prevention Resource Guide. Find replacements if still relevant.
 - [ ] The Mental Health Parity 101 registration link still points to trainedprogram.net (Wix). Replace it before that site is closed.

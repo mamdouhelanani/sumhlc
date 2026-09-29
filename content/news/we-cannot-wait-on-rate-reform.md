@@ -4,7 +4,7 @@ date: 2024-04-09
 author: sumhlc-admin
 category: Perspectives
 excerpt: We need the help of our Governor and General Assembly to ensure our patients and families continue to receive the care they so desperately need.
-image: https://sumhlc.org/wp-content/uploads/2024/03/Tassoni.jpg
+image: /wp-content/uploads/2024/03/Tassoni.jpg
 imageAlt: John Tassoni
 originalUrl: https://sumhlc.org/2024/04/09/we-cannot-wait-on-rate-reform/
 wpId: 1708
@@ -40,4 +40,4 @@ To view the RI House of Representatives, click here: [https://www.rilegislature.
 
 To view the RI Senate, click here: [https://www.rilegislature.gov/senators/default.aspx](https://www.rilegislature.gov/senators/default.aspx)
 
-![John Tassoni](https://sumhlc.org/wp-content/uploads/2024/03/Tassoni.jpg)
+![John Tassoni](/wp-content/uploads/2024/03/Tassoni.jpg)

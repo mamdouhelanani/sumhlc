@@ -4,7 +4,7 @@ date: 2024-05-01
 author: sumhlc-admin
 category: Perspectives
 excerpt: Despite the consensus on their importance, medications remain underused, presenting a significant gap in the standard services available to treat individuals with substance use disorder (SUD).
-image: https://sumhlc.org/wp-content/uploads/2024/05/prescribe.jpg
+image: /wp-content/uploads/2024/05/prescribe.jpg
 imageAlt: pharmacist reading a prescription
 originalUrl: https://sumhlc.org/2024/05/01/lessons-to-accelerate-moud-prescribing-among-behavioral-healthcare-providers/
 wpId: 2119
@@ -63,4 +63,4 @@ Technical assistance (TA) around implementation can help behavioral health care 
 
 The path to effectively combating the opioid crisis lies in significantly increasing the rates of MOUD prescribing among health care providers. Despite the hurdles — ranging from limited provider training and pervasive stigma to financial constraints and restrictive regulations — progress is within reach. By prioritizing increased provider education, integrating harm reduction principles, strengthening partnerships, deploying innovative treatment models and leveraging available funding, we can close the gap in treatment access. This concerted effort will not only increase prescribing rates but will lead to more inclusive and effective care that ensures individuals across all communities have the support they need to recover and thrive.
 
-![pharmacist reading a prescription](https://sumhlc.org/wp-content/uploads/2024/05/prescribe-350x350.jpg)
+![pharmacist reading a prescription](/wp-content/uploads/2024/05/prescribe-350x350.jpg)

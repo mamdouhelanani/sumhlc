@@ -4,7 +4,7 @@ date: 2024-06-27
 author: Sophia Elanani
 category: Perspectives
 excerpt: I am pleased to report that SUMHLC had a very successful legislative session. At the State House, we strongly advocated on behalf of our providers for a rate increase they desperately needed. After over 20 years without…
-image: https://sumhlc.org/wp-content/uploads/2024/04/sumhlcLogoSmall.png
+image: /wp-content/uploads/2024/04/sumhlcLogoSmall.png
 imageAlt: SUMHLC Logo
 originalUrl: https://sumhlc.org/2024/06/27/legislative-recap-2024/
 wpId: 2910
@@ -26,6 +26,6 @@ Recognizing the important services we provide to battle addiction and mental hea
 
 The State of Rhode Island is at the forefront of mental health and substance use disorder treatment and prevention. Our legislative leaders recognize that the time to act is now. We thank the Governor and General Assembly for helping to ensure that our patients and families continue to receive the care they deserve.
 
-To learn more about SUMHLC and how you can help please visit [www.sumhlc.org](http://www.sumhlc.org).
+To learn more about SUMHLC and how you can help please visit [www.sumhlc.org](/).
 
-![SUMHLC Logo](https://sumhlc.org/wp-content/uploads/2024/04/sumhlcLogoSmall.png)
+![SUMHLC Logo](/wp-content/uploads/2024/04/sumhlcLogoSmall.png)

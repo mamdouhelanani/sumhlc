@@ -4,7 +4,7 @@ date: 2026-08-14
 author: Brian S
 category: News
 excerpt: Listen in Now!
-image: https://sumhlc.org/wp-content/uploads/2026/08/chaos.png
+image: /wp-content/uploads/2026/08/chaos.png
 imageAlt: null
 originalUrl: https://sumhlc.org/2026/08/14/sumhlc-president-ceo-featured-on-chaos-in-recovery/
 wpId: 6420

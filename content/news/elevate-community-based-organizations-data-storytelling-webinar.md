@@ -4,13 +4,13 @@ date: 2024-03-27
 author: Sophia Elanani
 category: News
 excerpt: This four-part series will focus on providing the context and tools to move their work through data storytelling
-image: https://sumhlc.org/wp-content/uploads/2024/03/data-story.jpg
+image: /wp-content/uploads/2024/03/data-story.jpg
 imageAlt: data story
 originalUrl: https://sumhlc.org/2024/03/27/elevate-community-based-organizations-data-storytelling-webinar-series/
 wpId: 1305
 ---
 
-![data story](https://sumhlc.org/wp-content/uploads/2024/03/data-story.jpg)
+![data story](/wp-content/uploads/2024/03/data-story.jpg)
 
 #### Series starts Thursday, February 22, 2024 2 p.m. ET
 

@@ -4,13 +4,13 @@ date: 2024-03-26
 author: Sophia Elanani
 category: News
 excerpt: Under Hurley’s leadership, CODAC has been a national leader in developing new paradigms for the treatment of opioid use disorder
-image: https://sumhlc.org/wp-content/uploads/2024/03/L_Hurley.jpeg
+image: /wp-content/uploads/2024/03/L_Hurley.jpeg
 imageAlt: L Hurley
 originalUrl: https://sumhlc.org/2024/03/26/linda-hurley-ba-ma-cags-will-receive-a-lifetime-achievement-award/
 wpId: 1270
 ---
 
-![L Hurley](https://sumhlc.org/wp-content/uploads/2024/03/L_Hurley-240x300.jpeg)
+![L Hurley](/wp-content/uploads/2024/03/L_Hurley-240x300.jpeg)
 
 This award recognizes individuals for their tireless efforts and commitment to improving the lives of those living with mental health and substance use challenges.
 

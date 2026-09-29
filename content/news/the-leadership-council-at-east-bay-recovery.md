@@ -4,13 +4,13 @@ date: 2024-09-06
 author: Sophia Elanani
 category: News
 excerpt: The Substance Use and Mental Health Leadership Council sets up a table at Easy Bay Recovery Center!
-image: https://sumhlc.org/wp-content/uploads/2024/09/eb.png
+image: /wp-content/uploads/2024/09/eb.png
 imageAlt: null
 originalUrl: https://sumhlc.org/2024/09/06/the-leadership-council-at-east-bay-recovery/
 wpId: 3595
 ---
 
-![](https://sumhlc.org/wp-content/uploads/2024/09/eb-1024x768.png)
+![](/wp-content/uploads/2024/09/eb-1024x768.png)
 
 **September 5, 2024**
 

@@ -4,7 +4,7 @@ date: 2025-03-24
 author: Sophia Elanani
 category: Perspectives
 excerpt: Where does the money from Rhode Island’s cannabis sales go? As President and CEO at The Leadership Council for Substance Abuse and Mental Health of Rhode Island, I would like to know. So, members of the General…
-image: https://sumhlc.org/wp-content/uploads/2025/03/pexels-vlada-karpovich-4452502-scaled.jpg
+image: /wp-content/uploads/2025/03/pexels-vlada-karpovich-4452502-scaled.jpg
 imageAlt: null
 originalUrl: https://sumhlc.org/2025/03/24/op-ed-tassoni-says-cannabis-profits-should-go-to-prevention-education-and-treatment/
 wpId: 4624

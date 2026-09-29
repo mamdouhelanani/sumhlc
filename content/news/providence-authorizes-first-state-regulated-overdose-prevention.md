@@ -4,13 +4,13 @@ date: 2024-03-26
 author: Sophia Elanani
 category: News
 excerpt: The first state-regulated overdose prevention center in the country is one step closer to opening in Rhode Island, and it could be as soon as this summer.
-image: https://sumhlc.org/wp-content/uploads/2024/03/safe-injection.jpg
+image: /wp-content/uploads/2024/03/safe-injection.jpg
 imageAlt: safe injection
 originalUrl: https://sumhlc.org/2024/03/26/providence-authorizes-first-state-regulated-overdose-prevention-center/
 wpId: 1231
 ---
 
-![safe injection](https://sumhlc.org/wp-content/uploads/2024/03/safe-injection-300x218.jpg)
+![safe injection](/wp-content/uploads/2024/03/safe-injection-300x218.jpg)
 
 The first state-regulated overdose prevention center in the country is one step closer to opening in Rhode Island, and it could be as soon as this summer.
 

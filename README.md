@@ -34,6 +34,7 @@ Copy `.env.example` to `.env.local` to configure form email delivery.
 | `src/lib/content.ts` | Loads and validates everything in `content/` |
 | `next.config.ts` | Redirects from every old WordPress URL |
 | `scripts/migrate-wordpress.mjs` | One-off import of posts from the old site's WordPress API |
+| `scripts/migrate-wordpress-assets.mjs` | One-off copy of WordPress images and files into `public/wp-content/uploads/` |
 | `docs/` | Site audit, design system, launch checklist |
 
 ## Editing content

@@ -4,7 +4,7 @@ date: 2024-05-01
 author: sumhlc-admin
 category: Perspectives
 excerpt: While science suggests that addiction is a chronic illness, much of our thinking — and even the system designed to provide treatment and recovery support — is geared to provide episodic acute care.
-image: https://sumhlc.org/wp-content/uploads/2024/05/MCMW.png
+image: /wp-content/uploads/2024/05/MCMW.png
 imageAlt: National Council for Mental Wellbeing
 originalUrl: https://sumhlc.org/2024/05/01/rethinking-return-to-use-new-sud-resources/
 wpId: 2113
@@ -43,4 +43,4 @@ Please check out our new resources [DEMYSTIFYING RELAPSE: A Recurrence of Sympto
 
 And join the authors for a panel discussion during [NatCon24 in St. Louis](https://go.thenationalcouncil.org/NzczLU1KRi0zNzkAAAGR9x2HQl-NN2yPKb20FAfyBqGB77LJmexetOeCKtdWHQVxhqS7AH-wxxPWeLoJtromBexasx0=). Demystifying Relapse: Rethinking Substance Use Recurrence and Treatment will take place Wednesday, April 17, 10:30-11:30 a.m. CT.
 
-![National Council for Mental Wellbeing](https://sumhlc.org/wp-content/uploads/2024/05/MCMW-350x351.png)
+![National Council for Mental Wellbeing](/wp-content/uploads/2024/05/MCMW-350x351.png)

@@ -109,7 +109,7 @@ resources:
 
   # ── Resource guides ──
   - title: OTP Health Home Community Resource Guide (August 2026)
-    url: https://sumhlc.org/wp-content/uploads/2026/08/HH-Resource-Guide-August-2026.pdf
+    url: /wp-content/uploads/2026/08/HH-Resource-Guide-August-2026.pdf
     kind: pdf
     category: guides
     audience: [ individuals, professionals ]
@@ -202,7 +202,7 @@ resources:
 
   # ── Self-screening ──
   - title: Drug Abuse Screening Test (DAST-10)
-    url: https://sumhlc.org/wp-content/uploads/2024/04/DrugAbuseScreeningTest_2014Mar24.pdf
+    url: /wp-content/uploads/2024/04/DrugAbuseScreeningTest_2014Mar24.pdf
     kind: pdf
     category: screening
     audience: [ individuals, professionals ]
@@ -212,7 +212,7 @@ resources:
 
   # ── Handouts & data ──
   - title: NARR recovery residence levels
-    url: https://sumhlc.org/wp-content/uploads/2025/08/NARR-Levels-1.pdf
+    url: /wp-content/uploads/2025/08/NARR-Levels-1.pdf
     kind: pdf
     category: handouts
     audience: [ individuals, professionals ]
@@ -221,7 +221,7 @@ resources:
     tags: [ recovery housing, sober living, NARR ]
 
   - title: Adult behavioral health in Rhode Island — 2024 snapshot
-    url: https://sumhlc.org/wp-content/uploads/2025/08/2024-Snapshot-Adult-Behavioral-Health-in-RI-V5-Fina.pdf
+    url: /wp-content/uploads/2025/08/2024-Snapshot-Adult-Behavioral-Health-in-RI-V5-Fina.pdf
     kind: pdf
     category: handouts
     audience: [ professionals ]
@@ -295,7 +295,7 @@ resources:
     tags: [ handouts, printables, health home ]
 
   - title: OTP HH Patient-Centered Plan of Care
-    url: https://sumhlc.org/wp-content/uploads/2025/03/OTP-HH-Patient-Centered-Plan-of-Care-02.0322-Final.pdf
+    url: /wp-content/uploads/2025/03/OTP-HH-Patient-Centered-Plan-of-Care-02.0322-Final.pdf
     kind: pdf
     category: otp-health-homes
     audience: [ professionals ]
@@ -304,7 +304,7 @@ resources:
     tags: [ staff form, plan of care ]
 
   - title: OTP HH Receive/Resume Services form
-    url: https://sumhlc.org/wp-content/uploads/2025/03/OTP-HH-Receive-or-Resume-Form-Final.pdf
+    url: /wp-content/uploads/2025/03/OTP-HH-Receive-or-Resume-Form-Final.pdf
     kind: pdf
     category: otp-health-homes
     audience: [ professionals ]
@@ -313,7 +313,7 @@ resources:
     tags: [ staff form, enrollment ]
 
   - title: OTP HH Eligibility and Follow-Up form
-    url: https://sumhlc.org/wp-content/uploads/2025/03/OTP-Health-Home-Eligibility-and-Follow-Final.pdf
+    url: /wp-content/uploads/2025/03/OTP-Health-Home-Eligibility-and-Follow-Final.pdf
     kind: pdf
     category: otp-health-homes
     audience: [ professionals ]
@@ -322,7 +322,7 @@ resources:
     tags: [ staff form, eligibility ]
 
   - title: OTP HH Opt-Out form
-    url: https://sumhlc.org/wp-content/uploads/2025/03/Health-Home-Opt-out-Form-Final.pdf
+    url: /wp-content/uploads/2025/03/Health-Home-Opt-out-Form-Final.pdf
     kind: pdf
     category: otp-health-homes
     audience: [ professionals ]

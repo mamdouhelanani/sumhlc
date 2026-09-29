@@ -4,13 +4,13 @@ date: 2024-03-26
 author: Sophia Elanani
 category: News
 excerpt: The purpose of this program is to mobilize and connect a broad array of community-based resources
-image: https://sumhlc.org/wp-content/uploads/2024/03/community.jpg
+image: /wp-content/uploads/2024/03/community.jpg
 imageAlt: community
 originalUrl: https://sumhlc.org/2024/03/26/building-communities-of-recovery/
 wpId: 1291
 ---
 
-![community](https://sumhlc.org/wp-content/uploads/2024/03/community.jpg)
+![community](/wp-content/uploads/2024/03/community.jpg)
 
 ### Application Due Date: Monday, April 29, 2024
 

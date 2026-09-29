@@ -4,13 +4,13 @@ date: 2024-03-29
 author: sumhlc-admin
 category: News
 excerpt: EOHHS is excited about the structure of the planning process and has always been committed to the importance of a vibrant public/private partnership for the work
-image: https://sumhlc.org/wp-content/uploads/2024/03/Tassoni.jpg
+image: /wp-content/uploads/2024/03/Tassoni.jpg
 imageAlt: John Tassoni
 originalUrl: https://sumhlc.org/2024/03/29/john-j-tassoni-jr-to-participate-on-the-eohhs-independent-advisory-committee/
 wpId: 1511
 ---
 
-![John Tassoni](https://sumhlc.org/wp-content/uploads/2024/03/Tassoni.jpg)
+![John Tassoni](/wp-content/uploads/2024/03/Tassoni.jpg)
 
 Dear John,
 

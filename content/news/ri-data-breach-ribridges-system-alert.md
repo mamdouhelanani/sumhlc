@@ -4,13 +4,13 @@ date: 2024-12-17
 author: Sophia Elanani
 category: News
 excerpt: RIBridges Alert*** On December 13, 2024, the State was informed by its vendor, Deloitte, that there was a major security threat to RIBridges, the system that manages many of the state’s social services programs.…
-image: https://sumhlc.org/wp-content/uploads/2024/12/Futuristic-Control-Panel-Close-Up.jpeg
+image: /wp-content/uploads/2024/12/Futuristic-Control-Panel-Close-Up.jpeg
 imageAlt: null
 originalUrl: https://sumhlc.org/2024/12/17/ri-data-breach-ribridges-system-alert/
 wpId: 4091
 ---
 
-![](https://sumhlc.org/wp-content/uploads/2024/12/Futuristic-Control-Panel-Close-Up-683x1024.jpeg)
+![](/wp-content/uploads/2024/12/Futuristic-Control-Panel-Close-Up-683x1024.jpeg)
 
 **What You Need to Know About the RI Bridges Security Threat:**
 On December 13, Rhode Island announced that there was a security threat to the RIBridges system, which operates social services programs for our state. Specifically, RI Bridges operates:
@@ -41,8 +41,8 @@ On December 13, Rhode Island announced that there was a security threat to the R
 
 **Resources:** Available in both English and Spanish, offer helpful tips on safeguarding personal information.
 
--   [Tips to protect personal information (English)](https://sumhlc.org/wp-content/uploads/2024/12/Tips-to-protec-eng.pdf)
--   [Tips to protect personal information (Spanish)](https://sumhlc.org/wp-content/uploads/2024/12/Tips-to-protec-span.pdf)
+-   [Tips to protect personal information (English)](/wp-content/uploads/2024/12/Tips-to-protec-eng.pdf)
+-   [Tips to protect personal information (Spanish)](/wp-content/uploads/2024/12/Tips-to-protec-span.pdf)
 
 **Need Assistance? Please visit the following website:** [https://admin.ri.gov/ribridges-alert](https://admin.ri.gov/ribridges-alert)
 

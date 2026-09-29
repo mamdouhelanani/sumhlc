@@ -4,16 +4,17 @@ import path from "node:path";
 import { Marked } from "marked";
 import YAML from "yaml";
 import { z } from "zod";
+import { urlOrPath } from "./content";
 
 const NEWS_DIR = path.join(process.cwd(), "content", "news");
 
-const frontmatter = z.object({
+const frontmatter = z.strictObject({
   title: z.string(),
   date: z.iso.date(),
   author: z.string().default("SUMHLC"),
   category: z.enum(["News", "Perspectives"]),
   excerpt: z.string().nullish().transform((v) => v ?? null),
-  image: z.url().nullish().transform((v) => v ?? null),
+  image: urlOrPath.nullish().transform((v) => v ?? null),
   imageAlt: z.string().nullish().transform((v) => v ?? null),
   originalUrl: z.url().nullish(),
   wpId: z.number().nullish(),

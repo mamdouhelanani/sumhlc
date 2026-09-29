@@ -3,7 +3,7 @@
 name: Substance Use and Mental Health Leadership Council of Rhode Island
 shortName: SUMHLC
 description: SUMHLC promotes a collaborative, coordinated system of high-quality, comprehensive community-based mental health and substance use prevention and treatment services in Rhode Island.
-logo: https://sumhlc.org/wp-content/uploads/2024/01/SUMHLC_Logo-150x150.png
+logo: /wp-content/uploads/2024/01/SUMHLC_Logo-150x150.png
 address:
   street: 15 Messenger Drive, 1st Floor
   city: Warwick
@@ -15,4 +15,4 @@ facebook: https://www.facebook.com/theleadershipcouncil/
 youtube: https://www.youtube.com/channel/UCTGgVDR-RnwNyOEC7jmV4Ow
 newsletterUrl: https://lp.constantcontactpages.com/sl/YT3tLmc
 paypalUrl: https://www.paypal.com/donate/?hosted_button_id=A9RBQ4FWZKC4Y
-donationQrCode: https://sumhlc.org/wp-content/uploads/2025/01/QR-Code.png
+donationQrCode: /wp-content/uploads/2025/01/QR-Code.png

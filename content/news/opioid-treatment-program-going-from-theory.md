@@ -4,13 +4,13 @@ date: 2024-09-25
 author: Sophia Elanani
 category: News
 excerpt: With her compassion and knowledge, Linda Hurley, CEO of CODAC Behavioral Healthcare in Rhode Island, is able to convince corrections staff of the benefits of methadone and buprenorphine. But it isn’t easy. In a webinar…
-image: https://sumhlc.org/wp-content/uploads/2024/03/L_Hurley.jpeg
+image: /wp-content/uploads/2024/03/L_Hurley.jpeg
 imageAlt: L Hurley
 originalUrl: https://sumhlc.org/2024/09/25/opioid-treatment-program-going-from-theory-to-practice/
 wpId: 3678
 ---
 
-![L Hurley](https://sumhlc.org/wp-content/uploads/2024/03/L_Hurley-240x300.jpeg)
+![L Hurley](/wp-content/uploads/2024/03/L_Hurley-240x300.jpeg)
 
 ### With her compassion and knowledge, Linda Hurley, CEO of CODAC Behavioral Healthcare in Rhode Island, is able to convince corrections staff of the benefits of methadone and buprenorphine. But it isn’t easy. In a webinar on using medications
 to treat opioid use disorder (OUD) in

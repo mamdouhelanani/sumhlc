@@ -12,7 +12,7 @@ tiers:
     audience: Behavioral health provider organizations
     price: null
     priceNote: Dues are tiered by annual revenue.
-    applicationUrl: https://sumhlc.org/wp-content/uploads/2026/03/MEMBERSHIP-APPLICATION1.docx
+    applicationUrl: /wp-content/uploads/2026/03/MEMBERSHIP-APPLICATION1.docx
     badge: Voting board seat
 
   - id: associate
@@ -21,7 +21,7 @@ tiers:
     audience: Partner organizations, unions, businesses and allied services
     price: "$1,150"
     priceNote: per year
-    applicationUrl: https://sumhlc.org/wp-content/uploads/2026/03/Associatememberfinal.docx
+    applicationUrl: /wp-content/uploads/2026/03/Associatememberfinal.docx
     badge: null
 
   - id: single
@@ -30,7 +30,7 @@ tiers:
     audience: Individual professionals and small private practices
     price: "$300"
     priceNote: per year
-    applicationUrl: https://sumhlc.org/wp-content/uploads/2026/03/SingleMembershipApplication2026.docx
+    applicationUrl: /wp-content/uploads/2026/03/SingleMembershipApplication2026.docx
     badge: New
 
 benefits:

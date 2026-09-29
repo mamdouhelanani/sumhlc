@@ -22,7 +22,7 @@ export default function RecoveryTvPage() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div className="relative aspect-video overflow-hidden rounded-2xl bg-brand-50 shadow-sm">
             <Image
-              src="https://sumhlc.org/wp-content/uploads/2026/07/Screenshot-2026-07-13-104946.png"
+              src="/wp-content/uploads/2026/07/Screenshot-2026-07-13-104946.png"
               alt="Still from a SUMHLC Recovery TV episode"
               fill
               sizes="(min-width: 1024px) 600px, 100vw"

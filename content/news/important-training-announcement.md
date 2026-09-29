@@ -4,13 +4,13 @@ date: 2024-11-04
 author: Sophia Elanani
 category: News
 excerpt: "IMPORTANT ANNOUNCEMENT: We are sad to announce that we did not win the bid for the new BHDDH training contract. Our current contract ends on November 15,2024."
-image: https://sumhlc.org/wp-content/uploads/2024/11/software-update.jpg
+image: /wp-content/uploads/2024/11/software-update.jpg
 imageAlt: null
 originalUrl: https://sumhlc.org/2024/11/04/important-training-announcement/
 wpId: 3764
 ---
 
-![](https://sumhlc.org/wp-content/uploads/2024/07/Screenshot-2024-01-09-092131.png)
+![](/wp-content/uploads/2024/07/Screenshot-2024-01-09-092131.png)
 
 IMPORTANT ANNOUNCEMENT:
 

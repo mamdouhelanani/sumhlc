@@ -4,7 +4,7 @@ date: 2025-02-18
 author: Sophia Elanani
 category: News
 excerpt: "ConvergenceRI: What advantages does TRAIN RI bring to the discipline to set it apart from other competitors? TASSONI, JR.: For decades, the Leadership Council has served as a central hub for training and technical…"
-image: https://sumhlc.org/wp-content/uploads/2025/02/convergenceri.png
+image: /wp-content/uploads/2025/02/convergenceri.png
 imageAlt: null
 originalUrl: https://sumhlc.org/2025/02/18/convergence-ri-features-the-leadership-council-in-this-weeks-newsletter/
 wpId: 4337
