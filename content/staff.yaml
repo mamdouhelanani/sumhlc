@@ -1,0 +1,29 @@
+# Staff shown on /about-us/staff and /contact.
+
+staff:
+  - name: John J. Tassoni, Jr.
+    titles: [ President/CEO ]
+    phone: 401-521-5759
+    mobile: 401-451-1305
+    email: jtassoni@sumhlc.org
+    photo: https://sumhlc.org/wp-content/uploads/2026/06/john-1-683x1024.jpg
+
+  - name: Sophia Elanani
+    credentials: BA
+    titles: [ Director of Training, Opioid Treatment Program Health Home Coordinator ]
+    phone: 401-572-1257
+    email: selanani@sumhlc.org
+    photo: https://sumhlc.org/wp-content/uploads/2026/04/121-1-705x1024.jpg
+
+  - name: Wendy Looker
+    credentials: RN, BS
+    titles: [ Opioid Treatment Program Health Home Administrator ]
+    phone: 401-521-5759
+    email: wlooker@sumhlc.org
+    photo: https://sumhlc.org/wp-content/uploads/2024/01/wendyLooker.jpg
+
+  - name: Nicole Rouleau
+    titles: [ Administrative Assistant ]
+    phone: 401-521-5759
+    email: nrouleau@sumhlc.org
+    photo: https://sumhlc.org/wp-content/uploads/elementor/thumbs/IMG_2662-qpltsp45z293agzmo8rxta0n26vl10brmx5h4529sw.jpg

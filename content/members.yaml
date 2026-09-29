@@ -1,0 +1,339 @@
+# SUMHLC member organizations (/membership/directory). tier: full | associate
+# Entries with an internalNote starting "VERIFY" had conflicting data on the old site; confirm with the member.
+
+members:
+  - name: AdCare Rhode Island
+    tier: full
+    website: https://www.adcare.com
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/ADCARE.png
+    locations:
+      - { label: Main office, street: 1950 Tower Hill Rd., city: North Kingstown, zip: "02852", phone: (401) 292-0419 }
+      - { label: Warwick Outpatient, street: "400 Bald Hill Rd., Suite 517", city: Warwick, zip: "02886" }
+      - { label: South Kingstown Outpatient, street: "49 S. County Commons Way, Unit F6", city: South Kingstown, zip: "02879" }
+      - { label: Greenville Outpatient, street: "600 Putnam Pike, Suite 107", city: Greenville, zip: "02828" }
+
+  - name: Addiction Recovery Institute
+    tier: full
+    website: https://www.methadone.com
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/Addiction-Recovery-Institute-LOGO_250x0.jpg
+    locations:
+      - { label: North Office, street: 31 North Union St., city: Pawtucket, zip: "02860", phone: (401) 725-2520 }
+      - { label: South Office, street: "205 Hallene Rd., Suite 102", city: Warwick, zip: "02886", phone: (401) 737-4788 }
+
+  - name: Blackstone Valley Prevention Coalition
+    tier: full
+    website: http://blackstonevalleypreventioncoalition.com/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/Blackstone-Valley-Prevention-Coalition-Logo_125x0.jpg
+    locations:
+      - { label: Main office, phone: (401) 475-1168 }
+    internalNote: "VERIFY: old site showed AdCare's address for this coalition. Address removed; phone kept."
+
+  - name: Bridgemark, Inc.
+    tier: full
+    website: https://www.bridgemark.org
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/BM-2_240x83.jpg
+    locations:
+      - { label: Main office, street: 2020 Elmwood Ave., city: Warwick, zip: "02886", phone: (401) 781-2700 }
+
+  - name: BHG Behavioral Health Group
+    tier: full
+    website: https://www.bhgrecovery.com/locations
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/bhg-recovery-logo_299x98.jpg
+    locations:
+      - { label: Pawtucket, street: "82 Pond St., Suite 104", city: Pawtucket, zip: "02860", phone: (401) 727-1287 }
+
+  - name: Child & Family
+    tier: full
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/ChildFamily-with-tagline_logo_color_291x102.jpg
+    locations:
+      - { label: Providence, street: 1268 Eddy St., city: Providence, zip: "02905", phone: (401) 781-3669 }
+      - { label: Middletown, street: 31 John Clarke Rd., city: Middletown, zip: "02842", phone: (401) 849-2300 }
+    internalNote: 'VERIFY: Providence phone was "(401) 781-36692020" on the old site.'
+
+  - name: CODAC Behavioral Healthcare
+    tier: full
+    website: https://www.codacinc.org
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/codac-logo_164x0.jpg
+    locations:
+      - { label: Cranston, street: 1052 Park Ave., city: Cranston, zip: "02910", phone: (401) 461-5056 }
+      - { label: Providence, street: 349 Huntington Ave., city: Providence, zip: "02909", phone: (401) 942-1450 }
+      - { label: Pawtucket, street: 600 Pawtucket Ave., city: Pawtucket, zip: "02860", phone: (401) 808-6278 }
+      - { label: South County, street: 3045 Tower Hill Rd., city: Saunderstown, zip: "02874", phone: (401) 789-0934 }
+      - { label: Newport, street: 93 Thames St., city: Newport, zip: "02840", phone: (401) 846-4150 }
+      - { label: East Bay, street: 850 Waterman Ave., city: East Providence, zip: "02914", phone: (401) 434-4999 }
+
+  - name: Community Care Alliance
+    tier: full
+    website: https://www.communitycareri.org
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/CCAlogoFinalLongCMYK_296x127.jpg
+    locations:
+      - { label: Main office, street: 800 Clinton St., city: Woonsocket, zip: "02895", phone: (401) 235-7000 }
+      - { street: 245 Main St., city: Woonsocket, zip: "02895" }
+      - { street: 1 Social St., city: Woonsocket, zip: "02895" }
+      - { street: 55 John A. Cummings Way, city: Woonsocket, zip: "02895" }
+
+  - name: Comprehensive Community Action Program (CCAP)
+    tier: full
+    website: https://www.comcap.org
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/ccap-logo-web-02-300x86.jpg
+    locations:
+      - { label: Main office, street: 311 Doric Ave., city: Cranston, zip: "02910", phone: (401) 467-9610 }
+
+  - name: Discovery House
+    tier: full
+    website: https://www.rhodeislandctc.com
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/DH_290x65.jpg
+    locations:
+      - { label: Providence, street: 66 Pavilion Ave., city: Providence, zip: "02905", phone: (401) 337-8205 }
+      - { label: Woonsocket, street: 1625 Diamond Hill Rd., city: Woonsocket, zip: "02895", phone: (401) 216-1136 }
+    internalNote: "VERIFY: the old site listed three different phone numbers for each Discovery House site."
+
+  - name: East Bay Community Action Program / East Bay Center
+    tier: full
+    website: https://www.ebcap.org
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/EbCap-Logo.jpg
+    locations:
+      - { label: East Bay Health Center – Adams Farley Counseling, street: 10 Wampanoag Trail, city: East Providence, zip: "02915", phone: (401) 246-1195 }
+      - { label: Newport, street: 19 Broadway, city: Newport, zip: "02840", phone: (401) 848-6697 }
+      - { label: Newport, street: 6 John H. Chafee Blvd., city: Newport, zip: "02840", phone: (401) 848-2160 }
+      - { label: Riverside, street: 100 Bullocks Point Ave., city: Riverside, zip: "02915", phone: (401) 437-1000 }
+      - { label: Barrington, street: "John P. Digits, Jr. Facility, 2 Old County Rd.", city: Barrington, zip: "02806", phone: (401) 246-1195 }
+
+  - name: Elwyn / Fellowship Health Resources
+    tier: full
+    website: https://www.fhr.net
+    logo: https://sumhlc.org/wp-content/uploads/2024/01/Elwyn-Logo-Color.svg
+    locations:
+      - { label: Main office, street: "45 Sockanosset Cross Rd., Unit 4", city: Cranston, zip: "02920", phone: (401) 943-5817 }
+
+  - name: Family Service of Rhode Island
+    tier: full
+    website: https://www.familyserviceri.org/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/fsri_185x94.jpg
+    locations:
+      - { label: Mailing address, street: P.O. Box 6688, city: Providence, zip: "02940", phone: 401-331-1350 }
+
+  - name: The Galilee Mission
+    tier: full
+    website: https://www.galileemission.net
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/Galilee-Mission_100x0.jpg
+    locations:
+      - { label: Main office, street: 268 Kingstown Rd., city: Narragansett, zip: "02882", phone: (401) 789-9390 }
+
+  - name: Gateway Healthcare
+    tier: full
+    website: https://www.brownhealth.org/locations/gateway-healthcare
+    logo: https://sumhlc.org/wp-content/uploads/2024/11/gateway-350x118.png
+    locations:
+      - { label: Providence, street: "1 Virginia Ave., Suite 200", city: Providence, zip: "02905", phone: (401) 724-8400 }
+      - { label: Pawtucket, street: 101–105 Bacon St., city: Pawtucket, zip: "02860", phone: (401) 722-3560 }
+      - { label: Johnston, street: 1516 Atwood Ave., city: Johnston, zip: "02919", phone: (401) 785-2666 }
+      - { label: Johnston, street: 1443 Hartford Ave., city: Johnston, zip: "02919", phone: (401) 273-8100 }
+      - { label: Charlestown, street: 4705A Old Post Rd., city: Charlestown, zip: "02813", phone: (401) 364-7705 }
+
+  - name: Healthy Living in Recovery
+    tier: full
+    website: https://healthylivinginrecovery.org/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/trinity.png
+    locations:
+      - { label: Main office, street: 58 East Main Rd., city: Middletown, zip: "02842", phone: (888) 344-4045 }
+
+  - name: MAP Behavioral Health Services
+    tier: full
+    website: https://maprehab.com/about-us/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/MAP.png
+    locations:
+      - { label: Main office, street: 66 Burnett St., city: Providence, zip: "02907", phone: (401) 785-0050 }
+
+  - name: Newport Mental Health
+    tier: full
+    website: https://www.newportmentalhealth.org
+    logo: https://sumhlc.org/wp-content/uploads/2025/08/NMH-350x146.webp
+    locations:
+      - { label: Main office, street: 42 Valley Rd., city: Middletown, zip: "02842", phone: (401) 846-1213 }
+      - { street: 65 Valley Rd., city: Middletown, zip: "02842" }
+
+  - name: Problem Gambling Services
+    tier: full
+    website: https://www.problemgamblingservices.com/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/PG_379x131-300x78.jpg
+
+  - name: The Providence Center
+    tier: full
+    website: https://www.providencecenter.org/
+    logo: https://sumhlc.org/wp-content/uploads/2024/01/TPC_Logo_Color_tpc.svg
+    locations:
+      - { label: Main campus, street: 530 North Main St., city: Providence, zip: "02904", phone: (401) 276-4020 }
+
+  - name: Rhode Island Council on Problem Gambling
+    tier: full
+    website: https://www.ricpg.com/
+
+  - name: C3 for Wellbeing
+    tier: full
+    website: https://c3wellbeing.org/
+    logo: https://sumhlc.org/wp-content/uploads/2026/09/C3-350x82.png
+    locations:
+      - { label: Main office, street: "931 Jefferson Blvd., Suite 1001", city: Warwick, zip: "02886" }
+
+  - name: SSTAR of RI / SSTARbirth
+    tier: full
+    website: https://www.sstar.org/sstarbirth
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/SSTAR.jpg
+    locations:
+      - { label: Main office, street: 80 East St., city: Cranston, zip: "02920", phone: (401) 462-6001 }
+
+  - name: THRIVE Behavioral Health
+    tier: full
+    website: https://www.thrivebhri.org
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/THRIVE-JPEG-LOGO_160x0.jpg
+    locations:
+      - { label: Main office, street: "2756 Post Rd., Suite 104", city: Warwick, zip: "02886", phone: (401) 691-6000 }
+
+  - name: Tides Family Services
+    tier: full
+    website: https://www.tidesfs.org/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/TIDES_409x140-300x71.jpg
+    locations:
+      - { label: Main office, street: 790 Broad St., city: Providence, zip: "02907", phone: (401) 467-8888 }
+
+  - name: Tri-County Community Action Agency
+    tier: full
+    website: https://www.tricountyri.org
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/tricounty_225x56.jpg
+    locations:
+      - { label: Johnston, street: 1126 Hartford Ave., city: Johnston, zip: "02919", phone: (401) 351-2750 }
+      - { label: Charlestown, street: 4350 South County Trail, city: Charlestown, zip: "02813", phone: (401) 364-8810 }
+      - { label: North Kingstown, street: 415 Tower Hill Rd., city: North Kingstown, zip: "02852", phone: (401) 789-3016 }
+      - { label: North Providence, street: 33 Maple Ave., city: North Providence, zip: "02911", phone: (401) 351-2750 ext. 3139 }
+      - { label: Wakefield, street: 1935 Kingstown Rd., city: South Kingstown, zip: "02879" }
+      - { label: Westerly, street: 34 Pond St., city: Westerly, zip: "02891", phone: (401) 596-7272 }
+
+  - name: VICTA
+    tier: full
+    website: https://victalife.com/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/victas.png
+    locations:
+      - { label: Main office, street: 110 Elmwood Ave., city: Providence, zip: "02907", phone: (401) 300-5757 }
+
+  - name: Wood River Health Services
+    tier: full
+    website: http://wrhsri.org/
+    logo: https://sumhlc.org/wp-content/uploads/2024/05/woodRiver-350x83.jpg
+    locations:
+      - { label: Hope Valley, street: 823 Main St., city: Hope Valley, zip: "02832", phone: (401) 539-2461 }
+      - { label: Westerly, street: 17 Wells St., city: Westerly, zip: "02891" }
+
+  - name: Zinnia Health
+    tier: full
+    website: https://zinniahealth.com/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/zinnia.png
+    locations:
+      - { label: Exeter, street: 251 Main St., city: Exeter, zip: "02822", phone: (401) 295-0960 }
+
+  # ───────────── Associate members ─────────────
+  - name: Brisan Recovery Support Services
+    tier: associate
+    website: https://brisanrecovery.com/
+    logo: https://sumhlc.org/wp-content/uploads/2024/12/Logo-up-350x235.jpg
+    locations:
+      - { label: Main office, phone: 401-262-3110 }
+
+  - name: Building Futures Rhode Island
+    tier: associate
+    website: https://www.bfri.org/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/BFRI-ARI_logo-hi-res-300x180.jpg
+    locations:
+      - { label: Main office, street: 1 Acorn St., city: Providence, zip: "02903", phone: 401-919-5919 }
+
+  - name: Ellie Mental Health
+    tier: associate
+    website: https://elliementalhealth.com/locations/johnston-atwoodave-ri/
+    logo: https://sumhlc.org/wp-content/uploads/2026/09/logo.webp
+    locations:
+      - { label: Johnston, street: "1526 Atwood Ave., Suite 104", city: Johnston, zip: "02919" }
+
+  - name: Hilb Group
+    tier: associate
+    website: https://www.hilbgroup.com/growing-your-agency/lets-connect/
+    logo: https://sumhlc.org/wp-content/uploads/2026/09/Hilb.png
+    locations:
+      - { label: Main office, street: 2000 Chapel View Blvd., city: Cranston, zip: "02920" }
+    internalNote: "VERIFY: old site showed ZIP 02902; corrected to 02920 (Chapel View, Cranston)."
+
+  - name: International Union of Operating Engineers Local 57
+    tier: associate
+    website: http://www.iuoelocal57.org/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/local-57.gif
+    locations:
+      - { label: Main office, street: 857 Central Ave., city: Johnston, zip: "02919", phone: (401) 421-6678 }
+
+  - name: Ironworkers Local 37
+    tier: associate
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/ironworkers-37.png
+    locations:
+      - { label: Main office, street: 845 Waterman Ave., city: East Providence, zip: "02914", phone: (401) 438-1111 }
+    internalNote: "VERIFY: old site showed \"37845 Waterman Ave.\" and linked to UA Local 51's website."
+
+  - name: Monarch
+    tier: associate
+    website: https://monarchnc.org/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/Monarch-color-logo-800-x-320_306x135-300x120.jpg
+    locations:
+      - { label: Main office, street: "350 Pee Dee Ave., Suite 101", city: Albemarle, state: NC, zip: "28001", phone: (866) 272-7826 }
+
+  - name: Occupational and Environmental Health Center of Rhode Island
+    tier: associate
+    website: https://oehcri.org/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/occupationalenvir-300x97.png
+    locations:
+      - { label: Main office, street: "410 South Main St., Third Floor", city: Providence, zip: "02903", phone: (401) 621-2228 }
+
+  - name: Parent Support Network of Rhode Island
+    tier: associate
+    website: https://www.psnri.org/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/Parent-Support-Network-Logo_247x114.jpg
+    locations:
+      - { label: Main office, street: "535 Centerville Rd., Suite 202", city: Warwick, zip: "02886", phone: (401) 467-6855 }
+
+  - name: Revive Therapeutic Services
+    tier: associate
+    website: https://www.revivetherapeuticservices.com/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/revive-1-300x123.png
+    locations:
+      - { label: Main office, street: 845 North Main St., city: Providence, zip: "02904", phone: (401) 648-7172 }
+
+  - name: Rhode Island Dental Association
+    tier: associate
+    website: https://www.ridental.org/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/RIDEn-300x86.png
+    locations:
+      - { label: Main office, street: "875 Centerville Rd., Bldg. 4, Unit 12", city: Warwick, zip: "02886", phone: (401) 825-7700 }
+
+  - name: RI Communities for Addiction Recovery Efforts (RICARES)
+    tier: associate
+    website: https://ricares.org/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/RI-Cares-Logo-2.22.19_232x123.jpg
+    locations:
+      - { label: Main office, street: 133 Mathewson St., city: Providence, zip: "02903", phone: 401-475-2960 }
+
+  - name: UA Plumbers and Pipefitters Local 51
+    tier: associate
+    website: https://www.ualocal51.com
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/ua-Local51-300x92.jpg
+    locations:
+      - { label: Main office, street: 11 Hemingway Dr., city: East Providence, zip: "02915", phone: (401) 943-3033 }
+
+  - name: Uncornered, Inc.
+    tier: associate
+    website: https://uncornered.org/
+    logo: https://sumhlc.org/wp-content/uploads/2024/02/uncornered-300x98.jpg
+    locations:
+      - { label: Main office, street: 222 Bowdoin St., city: Dorchester, state: MA, zip: "02122", phone: 617-944-1086 }
+
+  - name: Youth Pride Inc.
+    tier: associate
+    website: https://www.youthprideri.org/
+    logo: https://sumhlc.org/wp-content/uploads/elementor/thumbs/YPI_LOGO_Full_Black-qxz1eijmnp5ajqbdrjl8q64knuubt602cwvhdwoh8w.png
+    locations:
+      - { label: Main office, street: 743 Westminster St., city: Providence, zip: "02903", phone: 401-421-5626 }

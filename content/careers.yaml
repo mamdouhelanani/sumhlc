@@ -1,0 +1,14 @@
+# Member organizations currently hiring (/careers). Tracking parameters removed from URLs.
+
+employers:
+  - { name: Child & Family, url: "https://childandfamily.applytojob.com/apply" }
+  - { name: CODAC Behavioral Healthcare, url: "https://www.indeed.com/q-codac-behavioral-health-l-rhode-island-jobs.html" }
+  - { name: Community Care Alliance, url: "https://www.communitycareri.org/careers/" }
+  - { name: Discovery House / Acadia, url: "https://www.acadiacareers.com/us/en/ri-ctc-sudc" }
+  - { name: Family Service of Rhode Island, url: "https://www.paycomonline.net/v4/ats/web.php/jobs?clientkey=F1A37F91D7AC06410785D83069B577A1" }
+  - { name: The Galilee Mission, url: "https://www.galileemission.net/careers" }
+  - { name: Newport Mental Health, url: "https://www.newportmentalhealth.org/about-us/careers/" }
+  - { name: The Providence Center, url: "https://www.carenewengland.org/careers" }
+  - { name: SSTARbirth, url: "https://www.sstar.org/work-where-you-love/" }
+  - { name: THRIVE Behavioral Health, url: "https://www.thrivebhri.org/about-us/careers/" }
+  - { name: Zinnia Health (Exeter), url: "https://zinniahealth.com/careers" }

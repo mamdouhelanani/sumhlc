@@ -1,0 +1,149 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@plugin "@tailwindcss/typography";
+
+/*
+ * SUMHLC design tokens.
+ * Brand blues are sampled from the SUMHLC logo (#00507f navy, #0070b0 cerulean).
+ * Every text/background pairing used in components meets WCAG 2.1 AA (≥ 4.5:1);
+ * see docs/design-system.md for the contrast table.
+ */
+@theme {
+  --color-brand-50: #eff6fb;
+  --color-brand-100: #dcecf6;
+  --color-brand-200: #c7dff0;
+  --color-brand-300: #9cc9e8;
+  --color-brand-500: #0070b0;
+  --color-brand-600: #0066a0;
+  --color-brand-700: #00507f;
+  --color-brand-800: #0d3d5e;
+  --color-brand-900: #0a2e47;
+  --color-brand-950: #071f31;
+
+  --color-warm-50: #fdf5ef;
+  --color-warm-100: #fce9dc;
+  --color-warm-200: #fbd9c2;
+  --color-warm-300: #f3b58f;
+  --color-warm-600: #b64b17;
+  --color-warm-700: #9a3d12;
+  --color-warm-800: #7a2e0c;
+
+  --color-sand-50: #faf7f2;
+  --color-sand-100: #f3eee5;
+
+  --color-ink: #10212f;
+  --color-slate-muted: #4a5b6b;
+
+  --font-sans: var(--font-public-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-source-serif), ui-serif, Georgia, serif;
+}
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: var(--color-ink);
+  --card: #ffffff;
+  --card-foreground: var(--color-ink);
+  --popover: #ffffff;
+  --popover-foreground: var(--color-ink);
+  --primary: var(--color-brand-700);
+  --primary-foreground: #ffffff;
+  --secondary: var(--color-brand-50);
+  --secondary-foreground: var(--color-brand-900);
+  --muted: var(--color-sand-100);
+  --muted-foreground: var(--color-slate-muted);
+  --accent: var(--color-brand-100);
+  --accent-foreground: var(--color-brand-900);
+  --destructive: #b42318;
+  --border: #d9e1e8;
+  /* Form-control borders need ≥ 3:1 against white (WCAG 1.4.11). */
+  --input: #768696;
+  --ring: var(--color-brand-500);
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-heading text-balance text-brand-900;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  /* One strong, consistent focus indicator for every interactive element. */
+  :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+    outline: 3px solid var(--ring);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: var(--color-brand-200);
+    color: var(--color-brand-950);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Keep the page from scrolling behind the open mobile menu (class set by MobileNav;
+   a :has() selector on <html> would force document-wide style recalculation). */
+html.menu-open {
+  overflow: hidden;
+}
+
+/* Set before first paint by the inline script in the root layout — no layout shift. */
+html[data-crisis-banner="dismissed"] .crisis-banner {
+  display: none;
+}

@@ -1,0 +1,43 @@
+# Rhode Island OTP Health Home providers (/programs/otp-health-homes).
+# Staff forms and guides live in resources.yaml under category otp-health-homes.
+
+training:
+  selfPacedUrl: https://sites.google.com/view/otphhoverview101/home
+  videoUrl: https://vimeo.com/1065113784
+  videoEmbedUrl: https://player.vimeo.com/video/1065113784?dnt=1
+
+providers:
+  - name: BHG Behavioral Health Group
+    website: https://www.bhgrecovery.com/locations
+    locations:
+      - { label: Providence, street: 160 Narragansett Ave., city: Providence, zip: "02907", phone: 401-941-4488 }
+      - { label: Johnston, street: 985 Plainfield St., city: Johnston, zip: "02919", phone: 401-946-0650 }
+      - { label: Pawtucket, street: 82 Pond St., city: Pawtucket, zip: "02860", phone: 401-727-1287 }
+      - { label: Middletown, street: "26 Valley Rd., Suite 202", city: Middletown, zip: "02842", phone: 401-552-4673 }
+      - { label: Westerly, street: 86 Beach St., city: Westerly, zip: "02891", phone: 401-596-0969 }
+
+  - name: Addiction Recovery Institute
+    website: https://www.methadone.com
+    locations:
+      - { label: Pawtucket, street: 31 N. Union St., city: Pawtucket, zip: "02860", phone: 401-725-2520 }
+      - { label: Warwick, street: "205 Hallene Rd., Suite 102", city: Warwick, zip: "02886", phone: 401-737-4788 }
+
+  - name: CODAC Behavioral Healthcare
+    website: https://www.codacinc.org
+    locations:
+      - { label: Cranston, street: 1052 Park Ave., city: Cranston, zip: "02910", phone: 401-461-5056 }
+      - { label: Royal Little (Providence), street: 45 Royal Little Dr., city: Providence, zip: "02904", phone: 401-808-6693 }
+      - { label: East Bay, street: 850 Waterman Ave., city: East Providence, zip: "02914", phone: 401-434-4999 }
+      - { label: Newport, street: 93 Thames St., city: Newport, zip: "02840", phone: 401-846-4150 }
+      - { label: South County, street: 3045 Tower Hill Rd., city: Saunderstown, zip: "02874", phone: 401-789-0934 }
+
+  - name: VICTA
+    website: https://victalife.com/
+    locations:
+      - { label: Providence, street: 110 Elmwood Ave., city: Providence, zip: "02907", phone: 401-300-5757 }
+
+  - name: Discovery House
+    website: https://www.rhodeislandctc.com
+    locations:
+      - { label: Providence, street: 66 Pavilion Ave., city: Providence, zip: "02905", phone: 855-926-1289 }
+      - { label: Woonsocket, street: 1625 Diamond Hill Rd., city: Woonsocket, zip: "02895", phone: 877-651-0348 }

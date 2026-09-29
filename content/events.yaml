@@ -1,0 +1,25 @@
+# Community and national events on /events. Past events move to "Recent events" automatically.
+
+events:
+  - title: RI-PREVCON 2026
+    date: 2026-09-29
+    venue: Crowne Plaza Hotel, Warwick, RI
+    organizer: RI Governor's Council on Behavioral Health Prevention Advisory Committee and BHDDH
+    description: Rhode Island's statewide prevention conference on substance use prevention and mental health promotion, with evidence-based strategies and networking across disciplines. This year's theme is Community Roots, Resilient Futures.
+    url: https://www.riprc.org/training-events/ri-prevcon-2026/
+
+  - title: Rally4Recovery
+    date: 2026-09-19
+    time: 12:00 – 4:00 PM
+    venue: 195 District Park, Providence, RI
+    organizer: RICARES
+    description: Southern New England's largest celebration of recovery — a free family festival with speakers, personal stories, a job fair of recovery-friendly employers and dozens of community organizations.
+    url: https://ricares.org/rally4recovery/
+
+  - title: Cape Cod Symposium on Addiction Disorders
+    date: null
+    dateNote: 2026 · date to be announced
+    venue: Providence, RI
+    organizer: HMP Global
+    description: A long-running conference for addiction treatment and behavioral health professionals, moving to Providence in 2026. Sessions cover clinical complexity, workforce strain, drug trends, regulation and evidence-based care.
+    url: https://www.hmpglobalevents.com/cape-cod-symposium

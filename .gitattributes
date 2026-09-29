@@ -1,0 +1,5 @@
+# Keep LF line endings everywhere, matching what Pages CMS writes.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary

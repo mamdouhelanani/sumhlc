@@ -1,0 +1,331 @@
+resources:
+  # Resource directory. Shown on /resources, searchable and filterable.
+  # category: crisis | support-groups | treatment | guides | older-adults | insurance |
+  #           screening | handouts | ccbhc | otp-health-homes
+  # audience: individuals and/or professionals
+  # kind: website | pdf | docx | video | folder | course | phone
+
+  # ── Crisis support ──
+  - title: BH Link
+    url: https://www.bhlink.org/
+    kind: website
+    category: crisis
+    audience: [ individuals, professionals ]
+    description: Rhode Island's 24/7 behavioral health crisis line and walk-in Triage Center. Nurses, counselors, psychiatrists and peer specialists help people through a crisis and connect them to ongoing care.
+    source: BH Link
+    tags: [ hotline, 24/7, walk-in, triage, emergency, mental health, substance use ]
+
+  - title: 988 Suicide & Crisis Lifeline
+    url: https://988lifeline.org
+    kind: website
+    category: crisis
+    audience: [ individuals, professionals ]
+    description: Call or text 988 any time for free, confidential support during a mental health, substance use or suicidal crisis.
+    source: SAMHSA
+    tags: [ hotline, suicide, 24/7, text, chat ]
+
+  # ── Support groups & peer recovery ──
+  - title: NAMI Rhode Island support groups
+    url: https://namirhodeisland.org/individuals/support-group-schedule/
+    kind: website
+    category: support-groups
+    audience: [ individuals ]
+    description: Free peer-led support groups for people living with mental illness and for their families.
+    source: NAMI Rhode Island
+    tags: [ peer support, families, mental health, meetings ]
+
+  - title: Peer support meetings list
+    url: https://psnri.org/resources/meetings.html
+    kind: website
+    category: support-groups
+    audience: [ individuals ]
+    description: Schedule of peer support meetings from the Parent Support Network of Rhode Island.
+    source: Parent Support Network of RI
+    tags: [ peer support, parents, families, meetings ]
+
+  - title: Rhode Island Alcoholics Anonymous
+    url: https://rhodeisland-aa.org/group-and-individual-service-needs/
+    kind: website
+    category: support-groups
+    audience: [ individuals ]
+    description: Find AA meetings and service contacts across Rhode Island.
+    source: RI Alcoholics Anonymous
+    tags: [ alcohol, AA, meetings, 12-step, recovery ]
+
+  - title: RI Communities for Addiction Recovery Efforts (RICARES)
+    url: https://ricares.org/
+    kind: website
+    category: support-groups
+    audience: [ individuals, professionals ]
+    description: Recovery community organization offering advocacy, recovery support and events such as Rally4Recovery.
+    source: RICARES
+    tags: [ recovery community, advocacy, peer support ]
+
+  - title: Grands Flourish
+    url: https://www.grandsflourish.org
+    kind: website
+    category: support-groups
+    audience: [ individuals ]
+    description: Free programs, information and peer-led support groups for grandparents raising grandchildren affected by substance use.
+    source: Grands Flourish Inc.
+    tags: [ grandparents, kinship care, families, caregivers, older adults ]
+
+  # ── Finding treatment ──
+  - title: Licensed substance use treatment providers (BHDDH)
+    url: https://bhddh.ri.gov/substance-useaddiction
+    kind: website
+    category: treatment
+    audience: [ individuals, professionals ]
+    description: The state's official list of licensed substance use treatment providers in Rhode Island.
+    source: RI Department of Behavioral Healthcare, Developmental Disabilities and Hospitals
+    tags: [ licensed providers, addiction, directory, state ]
+
+  - title: Prevent Overdose RI — get help
+    url: https://preventoverdoseri.org/get-help/
+    kind: website
+    category: treatment
+    audience: [ individuals, professionals ]
+    description: How to find treatment, naloxone (Narcan) and harm reduction services in Rhode Island.
+    source: Prevent Overdose RI
+    tags: [ overdose, naloxone, narcan, harm reduction, opioids, MAT ]
+
+  - title: Residential bed availability (RI BH Open Beds)
+    url: https://ribhopenbeds.org/
+    kind: website
+    category: treatment
+    audience: [ individuals, professionals ]
+    description: Near-real-time open beds at Rhode Island behavioral health residential and inpatient programs, maintained by BHDDH.
+    source: BHDDH / RIQI
+    tags: [ beds, residential, inpatient, detox, availability ]
+
+  - title: SAMHSA
+    url: https://www.samhsa.gov/
+    kind: website
+    category: treatment
+    audience: [ individuals, professionals ]
+    description: The federal Substance Abuse and Mental Health Services Administration — treatment locators, guides and data.
+    source: SAMHSA
+    tags: [ federal, treatment locator, mental health, substance use ]
+
+  # ── Resource guides ──
+  - title: OTP Health Home Community Resource Guide (August 2026)
+    url: https://sumhlc.org/wp-content/uploads/2026/08/HH-Resource-Guide-August-2026.pdf
+    kind: pdf
+    category: guides
+    audience: [ individuals, professionals ]
+    description: SUMHLC's community resource guide for Opioid Treatment Program Health Homes, updated August 2026.
+    source: SUMHLC
+    tags: [ community resources, health home, OTP, referrals ]
+
+  - title: Lifespan Emergency Resource Guide (2017 edition)
+    url: https://www.lifespan.org/sites/default/files/lifespan-files/documents/centers/lifespan-community-health/emergency-resources-updated-Jan2017.pdf
+    kind: pdf
+    category: guides
+    audience: [ individuals ]
+    description: Emergency food, shelter and support contacts. This edition dates from 2017, so confirm details before relying on them.
+    source: Lifespan (now Brown University Health)
+    tags: [ emergency, shelter, food, basic needs ]
+
+  # ── Older adults & memory care ──
+  - title: Rhode Island Elder Info
+    url: https://rielderinfo.com
+    kind: website
+    category: older-adults
+    audience: [ individuals ]
+    description: Information and services for supporting older adults in Rhode Island.
+    source: rielderinfo.com
+    tags: [ seniors, aging, elder care, caregivers ]
+
+  - title: Memory care in Rhode Island
+    url: https://www.memorycare.com/memory-care-in-rhode-island/
+    kind: website
+    category: older-adults
+    audience: [ individuals ]
+    description: Guide to memory care costs, financial assistance, free state resources and a directory of Rhode Island facilities.
+    source: MemoryCare.com
+    tags: [ dementia, alzheimers, memory care, costs, facilities ]
+
+  - title: Assisted living in Warwick
+    url: https://www.payingforseniorcare.com/assisted-living-in-warwick-ri
+    kind: website
+    category: older-adults
+    audience: [ individuals ]
+    description: Assisted living options and costs in Warwick, RI.
+    source: PayingForSeniorCare.com
+    tags: [ assisted living, seniors, costs, warwick ]
+
+  - title: Rhode Island assisted living and home care costs
+    url: https://www.payingforseniorcare.com/rhode-island
+    kind: website
+    category: older-adults
+    audience: [ individuals ]
+    description: Statewide costs and financial assistance for assisted living and home care.
+    source: PayingForSeniorCare.com
+    tags: [ home care, assisted living, financial assistance, seniors ]
+
+  # ── Health insurance ──
+  - title: Affordable health insurance guides
+    url: https://www.affordablehealthinsurance.com/
+    kind: website
+    category: insurance
+    audience: [ individuals ]
+    description: Plain-language guides to choosing health coverage, including costs and financial help.
+    source: AffordableHealthInsurance.com
+    tags: [ insurance, coverage, costs ]
+
+  - title: Medicare guide
+    url: https://www.affordablehealthinsurance.com/medicare/
+    kind: website
+    category: insurance
+    audience: [ individuals ]
+    description: How Medicare works, what it covers and how to enroll.
+    source: AffordableHealthInsurance.com
+    tags: [ medicare, seniors, insurance ]
+
+  - title: Medicaid guide
+    url: https://www.affordablehealthinsurance.com/medicaid/
+    kind: website
+    category: insurance
+    audience: [ individuals ]
+    description: Medicaid eligibility, benefits and how to apply.
+    source: AffordableHealthInsurance.com
+    tags: [ medicaid, low income, insurance ]
+
+  - title: Health insurance if you're unemployed
+    url: https://www.affordablehealthinsurance.com/health-insurance-for-unemployed/
+    kind: website
+    category: insurance
+    audience: [ individuals ]
+    description: Coverage options after losing a job, including COBRA, Marketplace and Medicaid.
+    source: AffordableHealthInsurance.com
+    tags: [ unemployed, cobra, marketplace, insurance ]
+
+  # ── Self-screening ──
+  - title: Drug Abuse Screening Test (DAST-10)
+    url: https://sumhlc.org/wp-content/uploads/2024/04/DrugAbuseScreeningTest_2014Mar24.pdf
+    kind: pdf
+    category: screening
+    audience: [ individuals, professionals ]
+    description: A 10-question self-screening for drug use. It is not a diagnosis — share your results with a health professional.
+    source: SUMHLC
+    tags: [ screening, self-assessment, drugs, DAST ]
+
+  # ── Handouts & data ──
+  - title: NARR recovery residence levels
+    url: https://sumhlc.org/wp-content/uploads/2025/08/NARR-Levels-1.pdf
+    kind: pdf
+    category: handouts
+    audience: [ individuals, professionals ]
+    description: Explains the four levels of recovery housing defined by the National Alliance for Recovery Residences.
+    source: NARR
+    tags: [ recovery housing, sober living, NARR ]
+
+  - title: Adult behavioral health in Rhode Island — 2024 snapshot
+    url: https://sumhlc.org/wp-content/uploads/2025/08/2024-Snapshot-Adult-Behavioral-Health-in-RI-V5-Fina.pdf
+    kind: pdf
+    category: handouts
+    audience: [ professionals ]
+    description: BHDDH data snapshot on adult mental health and substance use in Rhode Island.
+    source: BHDDH
+    tags: [ data, statistics, adults, report ]
+
+  # ── CCBHC ──
+  - title: The ABC's of CCBHC
+    url: https://static1.squarespace.com/static/58b0e7dd5016e199ea798d37/t/63cad6d7c9a00e05ba93f961/1674237655326/CCBHC%20presentation%20for%20HHP%201-20-2023.pdf
+    kind: pdf
+    category: ccbhc
+    audience: [ professionals ]
+    description: Introductory presentation on the Certified Community Behavioral Health Clinic model.
+    source: Horizon Healthcare Partners
+    tags: [ CCBHC, presentation, model ]
+
+  - title: CCBHC advocacy and legislation
+    url: https://www.hhpartners.org/advocacyandlegislation
+    kind: website
+    category: ccbhc
+    audience: [ professionals ]
+    description: Policy and legislative updates on CCBHCs.
+    source: Horizon Healthcare Partners
+    tags: [ CCBHC, policy, legislation ]
+
+  - title: CCBHC overview
+    url: https://www.thenationalcouncil.org/program/ccbhc-success-center/ccbhc-overview/
+    kind: website
+    category: ccbhc
+    audience: [ professionals ]
+    description: The National Council for Mental Wellbeing's guide to the CCBHC model and its success center.
+    source: National Council for Mental Wellbeing
+    tags: [ CCBHC, national council ]
+
+  - title: CCBHC criteria and information
+    url: https://www.samhsa.gov/certified-community-behavioral-health-clinics
+    kind: website
+    category: ccbhc
+    audience: [ professionals ]
+    description: SAMHSA's certification criteria and program information for CCBHCs.
+    source: SAMHSA
+    tags: [ CCBHC, criteria, federal ]
+
+  # ── OTP Health Homes ──
+  - title: Health Home 101 self-paced training
+    url: https://sites.google.com/view/otphhoverview101/home
+    kind: course
+    category: otp-health-homes
+    audience: [ professionals ]
+    description: Self-paced course on Rhode Island's OTP Health Home program — history, forms, procedures and assignments. Good for onboarding or a refresher; available 24/7.
+    source: SUMHLC
+    tags: [ training, onboarding, health home, OTP ]
+
+  - title: Health Home 101 video
+    url: https://vimeo.com/1065113784
+    kind: video
+    category: otp-health-homes
+    audience: [ professionals ]
+    description: Introductory overview of care coordination, populations served, enrollment and team roles in RI's OTP Health Homes.
+    source: SUMHLC
+    tags: [ video, training, health home, OTP ]
+
+  - title: Health Home printable resources
+    url: https://drive.google.com/drive/folders/1SevflTvsdbBqtlNlPjiHwNM9h3uH1Zzk
+    kind: folder
+    category: otp-health-homes
+    audience: [ professionals ]
+    description: Shared folder of printable Health Home handouts.
+    source: SUMHLC
+    tags: [ handouts, printables, health home ]
+
+  - title: OTP HH Patient-Centered Plan of Care
+    url: https://sumhlc.org/wp-content/uploads/2025/03/OTP-HH-Patient-Centered-Plan-of-Care-02.0322-Final.pdf
+    kind: pdf
+    category: otp-health-homes
+    audience: [ professionals ]
+    description: Staff form (version of Feb. 3, 2022).
+    source: SUMHLC
+    tags: [ staff form, plan of care ]
+
+  - title: OTP HH Receive/Resume Services form
+    url: https://sumhlc.org/wp-content/uploads/2025/03/OTP-HH-Receive-or-Resume-Form-Final.pdf
+    kind: pdf
+    category: otp-health-homes
+    audience: [ professionals ]
+    description: Staff form for starting or resuming Health Home services.
+    source: SUMHLC
+    tags: [ staff form, enrollment ]
+
+  - title: OTP HH Eligibility and Follow-Up form
+    url: https://sumhlc.org/wp-content/uploads/2025/03/OTP-Health-Home-Eligibility-and-Follow-Final.pdf
+    kind: pdf
+    category: otp-health-homes
+    audience: [ professionals ]
+    description: Staff form for documenting eligibility and follow-up.
+    source: SUMHLC
+    tags: [ staff form, eligibility ]
+
+  - title: OTP HH Opt-Out form
+    url: https://sumhlc.org/wp-content/uploads/2025/03/Health-Home-Opt-out-Form-Final.pdf
+    kind: pdf
+    category: otp-health-homes
+    audience: [ professionals ]
+    description: Staff form for patients who choose to opt out of Health Home services.
+    source: SUMHLC
+    tags: [ staff form, opt out ]

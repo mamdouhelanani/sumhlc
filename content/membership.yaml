@@ -1,0 +1,76 @@
+# Membership tiers and the comparison table on /membership.
+# price: null shows "Dues tiered by annual revenue — contact us" until amounts are published.
+# Benefit cells: "yes" = included, "no" = not included, or a short note (e.g. "Voting member").
+# VERIFY the benefit matrix with SUMHLC: it reflects only what the old membership page listed.
+
+applyEmail: selanani@gmail.com
+
+tiers:
+  - id: full
+    name: Full Board Membership
+    tagline: Lead, learn, and influence the future of behavioral health.
+    audience: Behavioral health provider organizations
+    price: null
+    priceNote: Dues are tiered by annual revenue.
+    applicationUrl: https://sumhlc.org/wp-content/uploads/2026/03/MEMBERSHIP-APPLICATION1.docx
+    badge: Voting board seat
+
+  - id: associate
+    name: Associate Membership
+    tagline: Your gateway to the behavioral health community, for partners who power the field behind the scenes.
+    audience: Partner organizations, unions, businesses and allied services
+    price: "$1,150"
+    priceNote: per year
+    applicationUrl: https://sumhlc.org/wp-content/uploads/2026/03/Associatememberfinal.docx
+    badge: null
+
+  - id: single
+    name: Single Membership
+    tagline: A way for independent professionals and small private practices to join a network of behavioral health professionals and affiliates.
+    audience: Individual professionals and small private practices
+    price: "$300"
+    priceNote: per year
+    applicationUrl: https://sumhlc.org/wp-content/uploads/2026/03/SingleMembershipApplication2026.docx
+    badge: New
+
+benefits:
+  - label: "SUMHLC communications and updates"
+    full: "yes"
+    associate: "yes"
+    single: "yes"
+  - label: "Legislative alerts, funding and policy updates"
+    full: "yes"
+    associate: "yes"
+    single: "no"
+  - label: "Professional development offerings"
+    full: "yes"
+    associate: "yes"
+    single: "no"
+  - label: "Networking, roundtables and forums with member organizations"
+    full: "yes"
+    associate: "yes"
+    single: "no"
+  - label: "Full board meetings"
+    full: "Voting member"
+    associate: "no"
+    single: "Non-voting"
+  - label: "Use of conference and training space"
+    full: "yes"
+    associate: "yes"
+    single: "no"
+  - label: "Volunteer opportunities"
+    full: "yes"
+    associate: "yes"
+    single: "no"
+  - label: "Promotion on the SUMHLC website"
+    full: "yes"
+    associate: "no"
+    single: "no"
+  - label: "Access to business discounts"
+    full: "yes"
+    associate: "no"
+    single: "no"
+  - label: "\"SUMHLC Proud Member\" logo"
+    full: "no"
+    associate: "no"
+    single: "yes"

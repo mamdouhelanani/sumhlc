@@ -1,0 +1,39 @@
+# Career & Licensure Resource Center (/trainings/licensure), moved from trainedprogram.net.
+# VERIFY CEU hours against each board's current rules before launch.
+
+ceuRequirements:
+  - { license: "Social Worker (LCSW, LICSW)", hours: 30 hours, period: Every 2 years }
+  - { license: Mental Health Counselor (LMHC), hours: 40 hours, period: Every 2 years }
+  - { license: Chemical Dependency Professional (LCDP), hours: 40 hours, period: Every 2 years }
+  - { license: Marriage & Family Therapist (LMFT), hours: 40 hours, period: Every 2 years }
+  - { license: Psychologist, hours: 24 hours, period: Every 2 years }
+
+groups:
+  - title: Rhode Island licensing & certification
+    intro: RIDOH licenses social workers, counselors, chemical dependency professionals, psychologists, and marriage and family therapists. RICB credentials alcohol and drug counselors, peer recovery specialists and clinical supervisors.
+    links:
+      - { label: RI Department of Health — professional licensing, url: "https://health.ri.gov/licensing" }
+      - { label: RI Certification Board (RICB), url: "https://www.ricertboard.org/" }
+      - { label: NASW Rhode Island Chapter — licensing, url: "https://naswri.socialworkers.org/Professional-Development/Licensing" }
+      - { label: RI Mental Health Counselors Association, url: "https://www.rimhca.com/" }
+      - { label: "RI Department of Behavioral Healthcare, Developmental Disabilities & Hospitals (BHDDH)", url: "https://bhddh.ri.gov/" }
+
+  - title: Massachusetts
+    links:
+      - { label: Board of Registration of Social Workers, url: "https://www.mass.gov/orgs/board-of-registration-of-social-workers" }
+      - { label: Board of Registration of Allied Mental Health and Human Services Professions, url: "https://www.mass.gov/orgs/board-of-registration-of-allied-mental-health-and-human-services-professions" }
+      - { label: Bureau of Substance Addiction Services (BSAS), url: "https://www.mass.gov/orgs/bureau-of-substance-addiction-services" }
+
+  - title: Connecticut
+    links:
+      - { label: Department of Public Health — professional counselor licensing, url: "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/Professional-Counselor/" }
+      - { label: Connecticut Certification Board, url: "https://ctcertboard.org/about-certification-and-licensure/" }
+      - { label: Connecticut Counseling Association, url: "https://www.ccacounseling.com/" }
+
+  - title: Regional & national organizations
+    links:
+      - { label: New England Addiction Technology Transfer Center (ATTC), url: "https://attcnetwork.org/center/new-england-attc/" }
+      - { label: "NAADAC, the Association for Addiction Professionals", url: "https://www.naadac.org/" }
+      - { label: National Board for Certified Counselors (NBCC), url: "https://www.nbcc.org/" }
+      - { label: National Association of Social Workers (NASW), url: "https://www.socialworkers.org/" }
+      - { label: International Credentialing & Reciprocity Consortium (IC&RC), url: "https://www.internationalcredentialing.org/" }

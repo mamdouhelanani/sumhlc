@@ -1,0 +1,468 @@
+# Pages CMS configuration — https://pagescms.org/docs
+# Staff edit content at https://app.pagescms.org. Every save is a commit to this
+# repository; the host rebuilds the site automatically. If a change breaks a rule in
+# src/lib/content.ts, the build fails and the live site keeps its last good version.
+#
+# Keep field names in sync with the schemas in src/lib/content.ts: Pages CMS removes
+# any key that isn't declared here when it saves a file.
+
+media:
+  input: public/uploads
+  output: /uploads
+  categories: [image, document]
+  rename: safe
+
+settings:
+  commit:
+    identity: user
+
+components:
+  location:
+    type: object
+    fields:
+      - { name: label, label: Site name, type: string, description: "e.g. Main office, Providence, Crisis Stabilization Unit" }
+      - { name: street, label: Street address, type: string }
+      - { name: city, label: City or town, type: string }
+      - { name: state, label: State, type: string, description: "Two letters. Leave blank for RI.", options: { maxlength: 2 } }
+      - name: zip
+        label: ZIP code
+        type: string
+        pattern: { regex: '^\d{5}$', message: "Use a 5-digit ZIP code" }
+      - { name: phone, label: Phone, type: string, description: "e.g. 401-521-5759. Two numbers can be joined with “or”." }
+      - { name: note, label: Note shown on the site, type: string }
+
+  internalNote:
+    type: string
+    label: Internal note (not shown on the site)
+    description: For staff only, e.g. details that still need to be confirmed.
+
+content:
+  # ─────────────────────────────── News ───────────────────────────────
+  - name: news
+    label: News & op-eds
+    type: collection
+    path: content/news
+    format: yaml-frontmatter
+    filename:
+      template: "{primary}.md"
+      field: create
+    view:
+      fields: [title, date, category]
+      primary: title
+      sort: [date, title]
+      search: [title, excerpt]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: date, label: Publish date, type: date, required: true }
+      - { name: author, label: Author, type: string, default: SUMHLC }
+      - name: category
+        label: Category
+        type: select
+        required: true
+        default: News
+        options:
+          values:
+            - { name: News, label: News }
+            - { name: Perspectives, label: Op-ed / perspective }
+      - { name: excerpt, label: Summary, type: text, description: "One or two sentences shown on news cards and in search results." }
+      - { name: image, label: Featured image, type: image }
+      - { name: imageAlt, label: Image description, type: string, description: "Describe the photo for people using screen readers, e.g. “Staff at the SUMHLC table at Rally4Recovery”." }
+      - { name: body, label: Post, type: rich-text, options: { format: markdown } }
+      - { name: originalUrl, type: string, hidden: true }
+      - { name: wpId, type: number, hidden: true }
+
+  # ─────────────────────────── Trainings & events ───────────────────────────
+  - name: trainings-and-events
+    label: Trainings & events
+    type: group
+    items:
+      - name: trainings
+        label: TRAIN ED trainings
+        type: file
+        path: content/trainings.yaml
+        format: yaml
+        fields:
+          - name: trainings
+            label: Trainings
+            type: object
+            description: Trainings whose date has passed disappear from the site automatically.
+            list:
+              collapsible: { collapsed: true, summary: "{date} — {title}" }
+            fields:
+              - { name: title, label: Title, type: string, required: true }
+              - { name: date, label: Date, type: date, description: "Leave empty if the date isn't set yet." }
+              - name: startTime
+                label: Start time
+                type: string
+                description: 24-hour Eastern time, e.g. 13:30
+                pattern: { regex: '^([01]\d|2[0-3]):[0-5]\d$', message: "Use 24-hour time, e.g. 13:30" }
+              - name: endTime
+                label: End time
+                type: string
+                description: 24-hour Eastern time, e.g. 15:00
+                pattern: { regex: '^([01]\d|2[0-3]):[0-5]\d$', message: "Use 24-hour time, e.g. 15:00" }
+              - { name: note, label: Notice, type: string, description: "Short badge on the card, e.g. “Almost at capacity” or “Date to be announced”." }
+              - { name: trainer, label: Trainer, type: string, description: "Name and credentials, e.g. Jane Doe, LICSW" }
+              - name: format
+                label: Format
+                type: select
+                required: true
+                default: virtual
+                options:
+                  values:
+                    - { name: virtual, label: Live online }
+                    - { name: in-person, label: In person }
+                    - { name: hybrid, label: Hybrid }
+              - { name: location, label: Location, type: string, description: "e.g. Zoom, or the venue address" }
+              - { name: ceus, label: Total CEUs, type: number, options: { min: 0 } }
+              - { name: credits, label: CE approvals, type: string, list: true, description: "One line per board, e.g. “2.0 NBCC-approved continuing education credit hours”." }
+              - { name: price, label: Price, type: string, description: "e.g. $25. Leave blank if free or not listed." }
+              - { name: description, label: Description, type: text }
+              - name: registerUrl
+                label: Registration link
+                type: string
+                pattern: { regex: '^https?://', message: "Paste the full link, starting with https://" }
+
+      - name: events
+        label: Community events
+        type: file
+        path: content/events.yaml
+        format: yaml
+        fields:
+          - name: events
+            label: Events
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{date} — {title}" }
+            fields:
+              - { name: title, label: Title, type: string, required: true }
+              - { name: date, label: Date, type: date, description: "Leave empty if not announced yet, and fill in “Date note”." }
+              - { name: dateNote, label: Date note, type: string, description: "Shown when there's no date, e.g. “Spring 2027 · date to be announced”." }
+              - { name: time, label: Time, type: string, description: "e.g. 12:00 – 4:00 PM" }
+              - { name: venue, label: Venue, type: string }
+              - { name: organizer, label: Presented by, type: string }
+              - { name: description, label: Description, type: text, required: true }
+              - name: url
+                label: Event website
+                type: string
+                pattern: { regex: '^https?://', message: "Paste the full link, starting with https://" }
+
+      - name: licensure
+        label: Licensure & CEU resources
+        type: file
+        path: content/licensure.yaml
+        format: yaml
+        fields:
+          - name: ceuRequirements
+            label: CEU requirements table
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{license}" }
+            fields:
+              - { name: license, label: License, type: string, required: true }
+              - { name: hours, label: CE hours required, type: string, required: true }
+              - { name: period, label: Renewal period, type: string, required: true }
+          - name: groups
+            label: Link groups
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{title}" }
+            fields:
+              - { name: title, label: Heading, type: string, required: true }
+              - { name: intro, label: Introduction, type: text }
+              - name: links
+                label: Links
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "{label}" }
+                fields:
+                  - { name: label, label: Link text, type: string, required: true }
+                  - name: url
+                    label: Web address
+                    type: string
+                    required: true
+                    pattern: { regex: '^https?://', message: "Paste the full link, starting with https://" }
+                  - { name: description, label: Description, type: string }
+
+  # ─────────────────────────────── Directories ───────────────────────────────
+  - name: directories
+    label: Directories
+    type: group
+    items:
+      - name: resources
+        label: Resource directory
+        type: file
+        path: content/resources.yaml
+        format: yaml
+        fields:
+          - name: resources
+            label: Resources
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{title}" }
+            fields:
+              - { name: title, label: Title, type: string, required: true }
+              - name: url
+                label: Link or file
+                type: string
+                required: true
+                description: "A full web address, or upload a PDF under Media and paste its /uploads/… path."
+                pattern: { regex: '^(https?://|/)', message: "Use a full web address (https://…) or an /uploads/… path" }
+              - name: kind
+                label: Type
+                type: select
+                required: true
+                default: website
+                options:
+                  values:
+                    - { name: website, label: Website }
+                    - { name: pdf, label: PDF }
+                    - { name: docx, label: Word document }
+                    - { name: video, label: Video }
+                    - { name: folder, label: Shared folder }
+                    - { name: course, label: Online course }
+              - name: category
+                label: Topic
+                type: select
+                required: true
+                options:
+                  values:
+                    - { name: crisis, label: Crisis support }
+                    - { name: support-groups, label: Support groups & peer recovery }
+                    - { name: treatment, label: Finding treatment }
+                    - { name: guides, label: Resource guides }
+                    - { name: older-adults, label: Older adults & memory care }
+                    - { name: insurance, label: Health insurance }
+                    - { name: screening, label: Self-screening tools }
+                    - { name: handouts, label: Handouts & data }
+                    - { name: ccbhc, label: Certified Community Behavioral Health Clinics }
+                    - { name: otp-health-homes, label: OTP Health Homes }
+              - name: audience
+                label: Who is it for?
+                type: select
+                required: true
+                options:
+                  multiple: true
+                  values:
+                    - { name: individuals, label: Individuals & families }
+                    - { name: professionals, label: Professionals & providers }
+              - { name: description, label: Description, type: text, required: true }
+              - { name: source, label: Published by, type: string }
+              - { name: tags, label: Search keywords, type: string, list: true, description: "Extra words people might search for, e.g. dementia, AA, Narcan." }
+
+      - name: providers
+        label: Treatment locator
+        type: file
+        path: content/providers.yaml
+        format: yaml
+        fields:
+          - name: providers
+            label: Providers
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{name}" }
+            fields:
+              - { name: name, label: Provider name, type: string, required: true }
+              - name: website
+                label: Website
+                type: string
+                pattern: { regex: '^https?://', message: "Paste the full link, starting with https://" }
+              - { name: member, label: SUMHLC member, type: boolean }
+              - name: services
+                label: Services
+                type: select
+                required: true
+                options:
+                  multiple: true
+                  values:
+                    - { name: mat, label: Medication for addiction treatment (MAT) }
+                    - { name: buprenorphine, label: Buprenorphine / Suboxone }
+                    - { name: naltrexone, label: Extended-release naltrexone }
+                    - { name: outpatient, label: Outpatient counseling }
+                    - { name: co-occurring, label: Co-occurring mental health & substance use }
+                    - { name: crisis, label: Crisis & emergency services }
+                    - { name: health-home, label: Opioid treatment program / OTP Health Home }
+                    - { name: veterans, label: Veterans only }
+              - { name: summary, label: Short description, type: text }
+              - name: locations
+                label: Locations
+                component: location
+                required: true
+                list:
+                  collapsible: { collapsed: true, summary: "{label} {city}" }
+              - { name: internalNote, component: internalNote }
+
+      - name: members
+        label: Member directory
+        type: file
+        path: content/members.yaml
+        format: yaml
+        fields:
+          - name: members
+            label: Members
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{name}" }
+            fields:
+              - { name: name, label: Organization name, type: string, required: true }
+              - name: tier
+                label: Membership
+                type: select
+                required: true
+                options:
+                  values:
+                    - { name: full, label: Full member }
+                    - { name: associate, label: Associate member }
+              - name: website
+                label: Website
+                type: string
+                pattern: { regex: '^https?://', message: "Paste the full link, starting with https://" }
+              - { name: logo, label: Logo, type: image }
+              - name: locations
+                label: Locations
+                component: location
+                list:
+                  collapsible: { collapsed: true, summary: "{label} {city}" }
+              - { name: internalNote, component: internalNote }
+
+      - name: otp-health-homes
+        label: OTP Health Homes
+        type: file
+        path: content/otp-health-homes.yaml
+        format: yaml
+        fields:
+          - name: training
+            label: Training links
+            type: object
+            fields:
+              - { name: selfPacedUrl, label: Self-paced course link, type: string, required: true }
+              - { name: videoUrl, label: Health Home 101 video link, type: string, required: true }
+              - { name: videoEmbedUrl, label: Video embed link, type: string, required: true, description: "The player.vimeo.com/video/… address." }
+          - name: providers
+            label: Health Home providers
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{name}" }
+            fields:
+              - { name: name, label: Provider name, type: string, required: true }
+              - { name: website, label: Website, type: string }
+              - name: locations
+                label: Locations
+                component: location
+                required: true
+                list:
+                  collapsible: { collapsed: true, summary: "{label}" }
+
+      - name: careers
+        label: Careers (members hiring)
+        type: file
+        path: content/careers.yaml
+        format: yaml
+        fields:
+          - name: employers
+            label: Employers
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{name}" }
+            fields:
+              - { name: name, label: Organization, type: string, required: true }
+              - name: url
+                label: Careers page link
+                type: string
+                required: true
+                pattern: { regex: '^https?://', message: "Paste the full link, starting with https://" }
+              - { name: member, label: SUMHLC member, type: boolean, default: true }
+
+  # ─────────────────────────────── Organization ───────────────────────────────
+  - name: organization
+    label: Organization
+    type: group
+    items:
+      - name: site
+        label: Site settings
+        type: file
+        path: content/site.yaml
+        format: yaml
+        fields:
+          - { name: name, label: Organization name, type: string, required: true }
+          - { name: shortName, label: Short name, type: string, required: true }
+          - { name: description, label: Description for search engines, type: text, required: true }
+          - { name: logo, label: Logo, type: image, required: true }
+          - name: address
+            label: Address
+            type: object
+            fields:
+              - { name: street, label: Street, type: string, required: true }
+              - { name: city, label: City, type: string, required: true }
+              - { name: state, label: State, type: string, required: true, options: { maxlength: 2 } }
+              - name: zip
+                label: ZIP code
+                type: string
+                required: true
+                pattern: { regex: '^\d{5}$', message: "Use a 5-digit ZIP code" }
+          - { name: phone, label: Main phone, type: string, required: true }
+          - { name: email, label: Public contact email, type: string, required: true, description: "Shown on the site and used for form submissions." }
+          - { name: facebook, label: Facebook page, type: string, required: true }
+          - { name: youtube, label: YouTube channel, type: string, required: true }
+          - { name: newsletterUrl, label: Mailing-list signup link, type: string, required: true }
+          - { name: paypalUrl, label: PayPal donation link, type: string, required: true }
+          - { name: donationQrCode, label: Donation QR code, type: image, required: true }
+          - { name: ein, label: EIN (tax ID), type: string, description: "Shown on the donate page once filled in." }
+
+      - name: staff
+        label: Staff
+        type: file
+        path: content/staff.yaml
+        format: yaml
+        fields:
+          - name: staff
+            label: Staff members
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{name}" }
+            fields:
+              - { name: name, label: Name, type: string, required: true }
+              - { name: credentials, label: Credentials, type: string, description: "e.g. RN, BS" }
+              - { name: titles, label: Job titles, type: string, list: true, required: true }
+              - { name: phone, label: Office phone, type: string }
+              - { name: mobile, label: Mobile phone, type: string }
+              - { name: email, label: Email, type: string, required: true }
+              - { name: photo, label: Photo, type: image }
+
+      - name: membership
+        label: Membership tiers
+        type: file
+        path: content/membership.yaml
+        format: yaml
+        fields:
+          - { name: applyEmail, label: Email for applications, type: string, required: true }
+          - name: tiers
+            label: Tiers
+            type: object
+            list:
+              min: 3
+              max: 3
+              collapsible: { collapsed: true, summary: "{name}" }
+            fields:
+              - { name: id, label: Tier ID, type: string, readonly: true }
+              - { name: name, label: Name, type: string, required: true }
+              - { name: tagline, label: Tagline, type: text, required: true }
+              - { name: audience, label: Who it's for, type: string, required: true }
+              - { name: price, label: Price, type: string, description: "e.g. $1,150. Leave blank to show “Contact us for dues”." }
+              - { name: priceNote, label: Price note, type: string, description: "e.g. per year, or Dues are tiered by annual revenue." }
+              - { name: applicationUrl, label: Application form, type: file, required: true }
+              - { name: badge, label: Badge, type: string, description: "Optional highlight, e.g. New" }
+          - name: benefits
+            label: Comparison table
+            type: object
+            description: For each tier, type yes, no, or a short note such as “Voting member”.
+            list:
+              collapsible: { collapsed: true, summary: "{label}" }
+            fields:
+              - { name: label, label: Benefit, type: string, required: true }
+              - { name: full, label: Full Board, type: string }
+              - { name: associate, label: Associate, type: string }
+              - { name: single, label: Single, type: string }
