@@ -3,7 +3,16 @@ import Link from "next/link";
 import { site } from "@/config/site";
 import { cn } from "@/lib/utils";
 
-export function Logo({ inverse = false, className }: { inverse?: boolean; className?: string }) {
+export function Logo({
+  inverse = false,
+  className,
+  subtitleClassName,
+}: {
+  inverse?: boolean;
+  className?: string;
+  /** e.g. hide the long name where the header is too narrow for it */
+  subtitleClassName?: string;
+}) {
   return (
     <Link href="/" className={cn("flex items-center gap-3 rounded-md", className)}>
       <span className="grid size-12 shrink-0 place-items-center overflow-hidden rounded-full bg-white ring-1 ring-brand-100">
@@ -13,7 +22,7 @@ export function Logo({ inverse = false, className }: { inverse?: boolean; classN
         <span className={cn("font-heading text-xl font-bold tracking-tight", inverse ? "text-white" : "text-brand-900")}>
           {site.shortName}
         </span>
-        <span className={cn("max-w-56 text-[0.7rem] leading-snug", inverse ? "text-brand-200" : "text-slate-muted")}>
+        <span className={cn("max-w-56 text-[0.7rem] leading-snug", inverse ? "text-brand-200" : "text-slate-muted", subtitleClassName)}>
           Substance Use &amp; Mental Health Leadership Council of RI
         </span>
       </span>

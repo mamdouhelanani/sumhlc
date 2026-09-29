@@ -37,7 +37,7 @@ export function MainNav() {
     };
   }, [open]);
 
-  const itemClass = "inline-flex h-11 items-center gap-1 rounded-lg px-3 text-[0.95rem] font-medium text-ink hover:bg-muted";
+  const itemClass = "inline-flex h-11 items-center gap-1 whitespace-nowrap rounded-lg px-3 text-[0.95rem] font-medium text-ink hover:bg-muted";
 
   return (
     <nav ref={navRef} aria-label="Main" className="hidden xl:block">

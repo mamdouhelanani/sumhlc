@@ -10,7 +10,8 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-30 border-b border-border bg-white">
       <Container className="flex h-20 items-center justify-between gap-4">
-        <Logo />
+        {/* The long name wraps badly on phones and crowds the full desktop menu. */}
+        <Logo subtitleClassName="hidden sm:block xl:hidden" />
         <MainNav />
         <div className="flex items-center gap-2">
           <Button asChild variant="outline" className="hidden border-brand-200 text-brand-800 sm:inline-flex">
