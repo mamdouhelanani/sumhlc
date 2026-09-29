@@ -27,7 +27,8 @@ components:
       - name: zip
         label: ZIP code
         type: string
-        pattern: { regex: '^\d{5}$', message: "Use a 5-digit ZIP code" }
+        # Pages CMS checks patterns even on blank fields, so optional patterns must also match "".
+        pattern: { regex: '^(\d{5})?$', message: "Use a 5-digit ZIP code" }
       - { name: phone, label: Phone, type: string, description: "e.g. 401-521-5759. Two numbers can be joined with “or”." }
       - { name: note, label: Note shown on the site, type: string }
 
@@ -93,17 +94,17 @@ content:
               collapsible: { collapsed: true, summary: "{date} — {title}" }
             fields:
               - { name: title, label: Title, type: string, required: true }
-              - { name: date, label: Date, type: date, description: "Leave empty if the date isn't set yet." }
+              - { name: date, label: Date, type: date, default: "", description: "Leave empty if the date isn't set yet." }
               - name: startTime
                 label: Start time
                 type: string
                 description: 24-hour Eastern time, e.g. 13:30
-                pattern: { regex: '^([01]\d|2[0-3]):[0-5]\d$', message: "Use 24-hour time, e.g. 13:30" }
+                pattern: { regex: '^(([01]\d|2[0-3]):[0-5]\d)?$', message: "Use 24-hour time, e.g. 13:30" }
               - name: endTime
                 label: End time
                 type: string
                 description: 24-hour Eastern time, e.g. 15:00
-                pattern: { regex: '^([01]\d|2[0-3]):[0-5]\d$', message: "Use 24-hour time, e.g. 15:00" }
+                pattern: { regex: '^(([01]\d|2[0-3]):[0-5]\d)?$', message: "Use 24-hour time, e.g. 15:00" }
               - { name: note, label: Notice, type: string, description: "Short badge on the card, e.g. “Almost at capacity” or “Date to be announced”." }
               - { name: trainer, label: Trainer, type: string, description: "Name and credentials, e.g. Jane Doe, LICSW" }
               - name: format
@@ -117,14 +118,14 @@ content:
                     - { name: in-person, label: In person }
                     - { name: hybrid, label: Hybrid }
               - { name: location, label: Location, type: string, description: "e.g. Zoom, or the venue address" }
-              - { name: ceus, label: Total CEUs, type: number, options: { min: 0 } }
+              - { name: ceus, label: Total CEUs, type: number, options: { min: 0, step: 0.05 } }
               - { name: credits, label: CE approvals, type: string, list: true, description: "One line per board, e.g. “2.0 NBCC-approved continuing education credit hours”." }
               - { name: price, label: Price, type: string, description: "e.g. $25. Leave blank if free or not listed." }
               - { name: description, label: Description, type: text }
               - name: registerUrl
                 label: Registration link
                 type: string
-                pattern: { regex: '^https?://', message: "Paste the full link, starting with https://" }
+                pattern: { regex: '^(https?://.*)?$', message: "Paste the full link, starting with https://" }
 
       - name: events
         label: Community events
@@ -139,7 +140,7 @@ content:
               collapsible: { collapsed: true, summary: "{date} — {title}" }
             fields:
               - { name: title, label: Title, type: string, required: true }
-              - { name: date, label: Date, type: date, description: "Leave empty if not announced yet, and fill in “Date note”." }
+              - { name: date, label: Date, type: date, default: "", description: "Leave empty if not announced yet, and fill in “Date note”." }
               - { name: dateNote, label: Date note, type: string, description: "Shown when there's no date, e.g. “Spring 2027 · date to be announced”." }
               - { name: time, label: Time, type: string, description: "e.g. 12:00 – 4:00 PM" }
               - { name: venue, label: Venue, type: string }
@@ -148,7 +149,7 @@ content:
               - name: url
                 label: Event website
                 type: string
-                pattern: { regex: '^https?://', message: "Paste the full link, starting with https://" }
+                pattern: { regex: '^(https?://.*)?$', message: "Paste the full link, starting with https://" }
 
       - name: licensure
         label: Licensure & CEU resources
@@ -269,7 +270,7 @@ content:
               - name: website
                 label: Website
                 type: string
-                pattern: { regex: '^https?://', message: "Paste the full link, starting with https://" }
+                pattern: { regex: '^(https?://.*)?$', message: "Paste the full link, starting with https://" }
               - { name: member, label: SUMHLC member, type: boolean }
               - name: services
                 label: Services
@@ -319,7 +320,7 @@ content:
               - name: website
                 label: Website
                 type: string
-                pattern: { regex: '^https?://', message: "Paste the full link, starting with https://" }
+                pattern: { regex: '^(https?://.*)?$', message: "Paste the full link, starting with https://" }
               - { name: logo, label: Logo, type: image }
               - name: locations
                 label: Locations

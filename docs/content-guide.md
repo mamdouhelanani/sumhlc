@@ -50,3 +50,8 @@ Anyone with write access to the GitHub repository can invite collaborators by em
 - **Pages CMS deletes any key that isn't declared in `.pages.yml`** when it saves a file. After adding a field to a schema, declare it in `.pages.yml` too, then run `npm run check:cms` to confirm every key in `content/` is covered.
 - Pages CMS rewrites YAML files on save, which removes comments. Put guidance in field `description`s in `.pages.yml` rather than in YAML comments.
 - Blank fields are removed rather than saved as empty strings, so optional fields in the schemas accept a missing key.
+- Pages CMS validates **every item in a file** on each save, so one bad value anywhere blocks saving the whole file. Three rules to keep in mind:
+  - `pattern` is checked even when the field is blank. Optional fields need a pattern that also matches an empty value, e.g. `'^(https?://.*)?$'`.
+  - Number inputs only accept multiples of `options.step`, which defaults to 1. Set a step (e.g. `0.05`) for decimals such as 1.5 CEUs.
+  - Optional date fields need `default: ""`. Otherwise Pages CMS fills an empty date with today's date when the file opens.
+- `npm run check:cms` checks all of the above against the current content.
